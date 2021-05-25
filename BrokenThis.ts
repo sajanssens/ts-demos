@@ -1,12 +1,12 @@
 export class BrokenThis {
     name: string = 'Bram';
 
-    doSomething = () => {        
-        return this.name;
+    doSomething = (s: string) => {
+        return s + this.name;
     }
 
-    doSomething2 = function x() {        
-        return this.name;
+    doSomething2 = function x(s: string) {
+        // return s + this.name;
     }
 
 }
